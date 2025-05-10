@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Parkinson's Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 Parkinson's Voice Analyzer</h1>
+        <p class="description">Upload a <strong>.wav</strong> file to analyze your voice and detect the presence or absence of Parkinson's disease.</p>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="audioFile" class="file-label">Choose a WAV file</label>
+            <input type="file" id="audioFile" accept=".wav" required>
+            <button type="submit">🎧 Analyze Voice</button>
+        </form>
+        <div id="loading" class="hidden">Analyzing... ⏳</div>
+        <div id="results"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
