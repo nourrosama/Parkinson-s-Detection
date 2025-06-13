@@ -78,7 +78,8 @@ Once the application is running:
 
 project/
 ├── static/ # Static files (CSS, JS, images)
-│ └── styles.css # Stylesheet (example)
+│ └── styles.css # Stylesheet 
+│ └── script.js 
 ├── templates/ # HTML templates
 │ └── index.html # Main page template
 ├── app.py # Main Flask application script
@@ -86,7 +87,7 @@ project/
 ├── scaler.pkl # Feature scaler for MFCC features
 ├── label_map.json # JSON file mapping model output to class labels
 ├── requirements.txt # List of Python dependencies
-└── README.md # Project documentation (this file)
+└── README.md # Project documentation 
 
 ## 🧠 Model & Data
 Model: TensorFlow Keras model trained to classify voice samples using MFCC features.
